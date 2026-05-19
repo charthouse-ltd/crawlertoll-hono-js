@@ -1,0 +1,77 @@
+{
+  "name": "@crawlertoll/hono",
+  "version": "0.1.0",
+  "description": "Hono middleware for the AI-crawler economy. One line wires bot detection, Web Bot Auth verification, RSL 1.0 policy, and HTTP 402 issuance into any Hono app. Runs on Cloudflare Workers, Bun, Deno, Vercel Edge, Node, and the browser — unmodified.",
+  "license": "Apache-2.0",
+  "author": "Charthouse Ltd",
+  "homepage": "https://crawlertoll.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhrzxxw9dn-web/crawlertoll-hono-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nhrzxxw9dn-web/crawlertoll-hono-js/issues"
+  },
+  "keywords": [
+    "hono",
+    "hono-middleware",
+    "cloudflare-workers",
+    "bun",
+    "deno",
+    "vercel-edge",
+    "ai-crawler",
+    "pay-per-crawl",
+    "web-bot-auth",
+    "rsl",
+    "rsl-1.0",
+    "bot-detection",
+    "gptbot",
+    "claudebot",
+    "http-402",
+    "x402",
+    "crawler-toll"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "peerDependencies": {
+    "hono": "^4.0.0"
+  },
+  "dependencies": {
+    "@crawlertoll/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "hono": "^4.6.14",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
