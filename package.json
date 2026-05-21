@@ -1,16 +1,16 @@
 {
   "name": "@crawlertoll/hono",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hono middleware for the AI-crawler economy. One line wires bot detection, Web Bot Auth verification, RSL 1.0 policy, and HTTP 402 issuance into any Hono app. Runs on Cloudflare Workers, Bun, Deno, Vercel Edge, Node, and the browser — unmodified.",
   "license": "Apache-2.0",
   "author": "Charthouse Ltd",
   "homepage": "https://crawlertoll.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nhrzxxw9dn-web/crawlertoll-hono-js.git"
+    "url": "git+https://github.com/charthouse-ltd/crawlertoll-hono-js.git"
   },
   "bugs": {
-    "url": "https://github.com/nhrzxxw9dn-web/crawlertoll-hono-js/issues"
+    "url": "https://github.com/charthouse-ltd/crawlertoll-hono-js/issues"
   },
   "keywords": [
     "hono",

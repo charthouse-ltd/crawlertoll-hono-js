@@ -269,7 +269,7 @@ The tests use Hono's synthetic `app.request()` — the same harness Hono itself 
 Run them:
 
 ```bash
-git clone https://github.com/nhrzxxw9dn-web/crawlertoll-hono-js
+git clone https://github.com/charthouse-ltd/crawlertoll-hono-js
 cd crawlertoll-hono-js
 npm install
 npm test
@@ -293,3 +293,7 @@ If your framework isn't listed, use `@crawlertoll/core`'s `decide()` directly �
 ## License
 
 [Apache-2.0](./LICENSE). All specs implemented are open standards under their own licenses (HTTP 402, IETF draft-meunier-web-bot-auth, RSL 1.0, x402).
+
+## Trademark
+
+CrawlerToll™ is a trademark of Charthouse Ltd.
